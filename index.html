@@ -15,27 +15,44 @@
         <h1>Nico's Pizza Order Form</h1>
         <p>fill out the order form below to see how much your pizza(s) will cost</p>
       </div>
-      <div id="pizzaOrder">
+      <form id="pizzaSubmit">
         <p>pick a size:</p>
         <div class="form-group">
-          <input type="radio" name="size" value="10">Small<br>
-          <input type="radio" name="size" value="15">Medium<br>
-          <input type="radio" name="size" value="20">Large<br>
+          <input type="radio" name="size" value="small">Small<br>
+          <input type="radio" name="size" value="medium">Medium<br>
+          <input type="radio" name="size" value="large">Large<br>
         </div>
         <p>select your toppings</p>
-        <div class="form-group">
-          <input type="checkbox" name="cheese" value ="5">Regular Cheese</br>
-          <input type="checkbox" name="cheese" value ="7">Fresh Mozzarella</br>
-          <input type="checkbox" name="cheese" value ="7">Vegan Cheese</br>
-
-        </div>
-        <button type="submit" class="btn btn-danger" id="pizzaSubmit">submit</button>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="form-group">
+              <input type="checkbox" name="topping" value="cheese">Regular Cheese</br>
+              <input type="checkbox" name="topping" value="fresh Mozarella">Fresh Mozzarella</br>
+              <input type="checkbox" name="topping" value="vegan cheese">Vegan Cheese</br>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="form-group">
+              <input type="checkbox" name="topping" value="artichoke">Artichoke</br>
+              <input type="checkbox" name="topping" value="black olive">Black Olive</br>
+              <input type="checkbox" name="topping" value"spinach">Spinach</br>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="form-group">
+              <input type="checkbox" name="topping" value="Pepperoni">Pepperoni</br>
+              <input type="checkbox" name="topping" value="Bacon">Bacon</br>
+              <input type="checkbox" name="topping" value"Chicken">Chicken</br>
+            </div>
+          </div>
+      </div>
+        <button type="submit" class="btn btn-danger">submit</button>
       </form>
     </div>
-    <div class="jumbotron" id="cost">
+    <div class="jumbotron">
      <p>Your Order:</p>
-     <div id="result">
-     </div>
+     <ul id="result">
+     </ul>
    </div>
  </div>
   </body>
