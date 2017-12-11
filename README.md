@@ -28,6 +28,12 @@ _nico.daunt@gmail.com_
 * jquery 3.2.1
 * bootstrap 3.3.7
 
+## Specifications
+
+1. The program will accept user input and calculate the cost of their order based off their specifications.
+  * _Input: Large, Pepperoni_
+  * _Output: Large Pepperoni pizza: $14_
+
 ### License
 
 *Open Source*

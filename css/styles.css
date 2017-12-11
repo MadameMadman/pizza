@@ -1,0 +1,40 @@
+.cheese {
+  background-color: #fef9ca;
+  border-radius: 1em;
+  padding: 1em;
+  margin: 1em;
+}
+
+.veggie {
+  background-color: #e9feca;
+  border-radius: 1em;
+  padding: 1em;
+  margin: 1em;
+}
+
+.meat {
+  background-color: 	#fedfca;
+  border-radius: 1em;
+  padding: 1em;
+  margin: 1em;
+}
+
+.order {
+  background-color: #cacffe;
+  border-radius: 1em;
+  padding: 2em;
+  margin: auto;
+}
+
+.jumbotron {
+  margin-top: 2em;
+  background-color: #cacffe;
+}
+
+.toppings{
+  margin: auto;
+}
+
+body {
+  font-family: 'Fredoka One', cursive;
+}

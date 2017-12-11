@@ -18,39 +18,45 @@
       <form id="pizzaSubmit">
         <p>pick a size:</p>
         <div class="form-group">
-          <input type="radio" name="size" value="small">Small<br>
-          <input type="radio" name="size" value="medium">Medium<br>
-          <input type="radio" name="size" value="large">Large<br>
+          <input type="radio" name="size" value="Small">Small<br>
+          <input type="radio" name="size" value="Medium">Medium<br>
+          <input type="radio" name="size" value="Large">Large<br>
         </div>
         <p>select your toppings</p>
-        <div class="row">
-          <div class="col-md-3">
-            <div class="form-group">
-              <input type="checkbox" name="topping" value="cheese">Regular Cheese</br>
-              <input type="checkbox" name="topping" value="fresh Mozarella">Fresh Mozzarella</br>
-              <input type="checkbox" name="topping" value="vegan cheese">Vegan Cheese</br>
+        <p>*all pizzas come topped with our <em>Signature Marinara</em> free of charge!</p>
+
+          <div class="row toppings">
+            <div class="cheese col-md-3">
+              <div class="form-group">
+                <p><em>CHEESE</em></p>
+                <input type="checkbox" name="topping" value=" cheese">Regular Cheese</br>
+                <input type="checkbox" name="topping" value=" fresh Mozarella">Fresh Mozzarella</br>
+                <input type="checkbox" name="topping" value=" vegan cheese">Vegan Cheese</br>
+              </div>
+            </div>
+            <div class="veggie col-md-3">
+              <div class="form-group">
+                <p><em>VEGGIES</em></p>
+                <input type="checkbox" name="topping" value=" Artichoke ">Artichoke</br>
+                <input type="checkbox" name="topping" value=" Black olive ">Black Olive</br>
+                <input type="checkbox" name="topping" value" Spinach">Spinach</br>
+              </div>
+            </div>
+            <div class="meat col-md-3">
+              <div class="form-group">
+                <p><em>MEAT</em></p>
+                <input type="checkbox" name="topping" value=" Pepperoni">Pepperoni</br>
+                <input type="checkbox" name="topping" value=" Bacon">Bacon</br>
+                <input type="checkbox" name="topping" value" Chicken">Chicken</br>
+              </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="form-group">
-              <input type="checkbox" name="topping" value="artichoke">Artichoke</br>
-              <input type="checkbox" name="topping" value="black olive">Black Olive</br>
-              <input type="checkbox" name="topping" value"spinach">Spinach</br>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="form-group">
-              <input type="checkbox" name="topping" value="Pepperoni">Pepperoni</br>
-              <input type="checkbox" name="topping" value="Bacon">Bacon</br>
-              <input type="checkbox" name="topping" value"Chicken">Chicken</br>
-            </div>
-          </div>
-      </div>
+
         <button type="submit" class="btn btn-danger">submit</button>
       </form>
     </div>
-    <div class="jumbotron">
-     <p>Your Order:</p>
+    <div class ="order jumbotron">
+     <p>Your Order(s):</p>
      <ul id="result">
      </ul>
    </div>
